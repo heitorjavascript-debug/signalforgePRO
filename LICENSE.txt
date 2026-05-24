@@ -1,0 +1,21 @@
+SignalForge Pro — Commercial License
+
+Copyright (c) 2026 SignalForge Studio.
+
+By purchasing SignalForge Pro you receive a non-exclusive, non-transferable
+license to use the template for one commercial project (Starter and Pro
+tiers) or unlimited commercial projects (Lifetime tier).
+
+You MAY:
+- Use the template for personal and commercial projects within your tier.
+- Modify, customize and extend the template freely.
+- Use it for client work (one project per Pro license).
+
+You MAY NOT:
+- Resell, redistribute, sublicense or open-source the template.
+- Include it in another template kit, marketplace or starter.
+- Claim original authorship.
+
+NO WARRANTY. Provided "as is".
+
+For questions: hello@signalforge.app

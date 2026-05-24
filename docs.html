@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Docs · SignalForge</title><meta name="description" content="Documentation for SignalForge Pro."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css"/></head>
+<body><div class="bg-grid"></div><div class="bg-noise"></div><div class="bg-gradient"></div><div class="bg-orbs"><div class="orb orb-a"></div><div class="orb orb-b"></div></div>
+<header class="nav lg">
+  <a href="index.html" class="logo"><span class="logo-mark"><span class="logo-pulse"></span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"><path d="M3 12h3l3-9 4 18 3-12 2 6h3"/></svg></span><span class="logo-text">SignalForge</span></a>
+  <nav class="nav-links"><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a href="explorer.html">Explorer</a><a href="pricing.html">Pricing</a><a href="docs.html">Docs</a></nav>
+  <div class="nav-cta"><a href="login.html" class="btn">Sign in</a><a href="signup.html" class="btn btn-primary">Get Started</a></div>
+</header><div class="doc-shell"><aside class="doc-side lg-soft" style="padding:18px">
+<h4>Getting started</h4><a class="active" href="#intro">Introduction</a><a href="#install">Installation</a><a href="#structure">File structure</a>
+<h4>Customizing</h4><a href="#theme">Theming</a><a href="#data">Demo data</a><a href="#pages">Adding pages</a>
+<h4>Deployment</h4><a href="#deploy">Deploy</a><a href="#license">License</a></aside>
+<div class="doc-main lg">
+<h1>Documentation</h1><div class="doc-meta">SignalForge Pro · v2.4</div>
+<h2 id="intro">Introduction</h2><p>SignalForge Pro is a complete template kit for building a creator-intelligence SaaS. It includes 14 HTML pages, 3 themes, full app shell, command palette, animations and liquid glass UI.</p>
+<h2 id="install">Installation</h2><p>No build step required. Just open <code>index.html</code> in a browser, or deploy the folder to any static host.</p>
+<pre><code># Local preview
+python3 -m http.server 8000
+# Then open http://localhost:8000</code></pre>
+<h2 id="structure">File structure</h2>
+<pre><code>signalforge-pro/
+├── index.html        Landing page
+├── dashboard.html    App overview
+├── radar.html        Trend radar
+├── hooks.html        Hook generator
+├── analyzer.html     Landing analyzer
+├── explorer.html     UI explorer
+├── opportunity.html  Opportunity engine
+├── settings.html     Account settings
+├── pricing.html      Pricing
+├── login.html        Auth
+├── signup.html       Auth
+├── docs.html         This file
+├── changelog.html    Release history
+├── 404.html          Not found
+└── assets/
+    ├── styles.css    Core design system
+    ├── app.css       Dashboard styles
+    ├── script.js     Landing interactions
+    ├── app.js        Dashboard logic
+    ├── data.js       Demo data (offline)
+    └── data.json     Demo data (HTTP)</code></pre>
+<h2 id="theme">Theming</h2><p>Three themes ship: <code>theme-dark</code>, <code>theme-midnight</code>, <code>theme-noir</code>. The switcher is in the bottom-right corner and persists in <code>localStorage</code>.</p>
+<p>To add your own, append a body class in <code>styles.css</code>:</p>
+<pre><code>body.theme-yourname{
+  --bg-0:#0a0014;
+  --bg-1:#10001f;
+}</code></pre>
+<h2 id="data">Demo data</h2><p>All dashboard pages read from <code>assets/data.json</code> (or <code>data.js</code> fallback for offline). Edit values in the JSON to change trends, opportunities and hook templates instantly.</p>
+<h2 id="pages">Adding pages</h2><p>Copy any existing dashboard page (e.g. <code>radar.html</code>), keep the sidebar block, replace the <code>.app-body</code> content.</p>
+<h2 id="deploy">Deployment</h2><p>Drop the folder on Vercel, Netlify, Cloudflare Pages or GitHub Pages. Zero config required.</p>
+<h2 id="license">License</h2><p>Single project license by default. Lifetime tier includes unlimited project use. See <code>LICENSE.txt</code> in the root.</p>
+</div></div><footer class="footer"><div class="footer-inner"><div class="foot-brand"><div class="logo"><span class="logo-mark"><span class="logo-pulse"></span></span><span class="logo-text">SignalForge</span></div><p>The creator intelligence platform.</p></div><div class="foot-cols"><div><h4>Product</h4><a href="dashboard.html">Dashboard</a><a href="radar.html">Trend Radar</a><a href="hooks.html">Hooks</a><a href="explorer.html">Explorer</a></div><div><h4>Resources</h4><a href="docs.html">Docs</a><a href="changelog.html">Changelog</a><a href="pricing.html">Pricing</a></div><div><h4>Account</h4><a href="login.html">Sign in</a><a href="signup.html">Sign up</a></div></div></div><div class="foot-bottom">© 2026 SignalForge OS</div></footer>
+<div class="theme-switch lg"><button class="t-dark active" data-theme="dark"></button><button class="t-mid" data-theme="midnight"></button><button class="t-noir" data-theme="noir"></button></div>
+<script src="assets/data.js"></script><script src="assets/script.js"></script></body></html>
